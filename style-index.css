@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lobster&display=swap');
 
+* {
+    text-align: center;
+}
+
 body {
     font-family: "Cinzel", serif;
     font-weight: 400;
@@ -15,11 +19,11 @@ header img {
     height: auto;
 }
 
-nav {
-
+nav a {
+    text-decoration: none;
 }
 
-nav a {
+p a {
     text-decoration: none;
 }
 
@@ -28,9 +32,6 @@ nav a {
     font-weight: 60;
     font-size: 1.1rem;
     letter-spacing: 2.5px;
-    text-shadow: 8px 8px 8px #706235;
+    text-shadow: 5px 5px 5px #72858C;
 }
 
-p#topo {
-    text-decoration: none;
-}
