@@ -1,26 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lobster&display=swap');
 
 * {
-    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: "Cinzel", serif;
     font-weight: 400;
-    font-style: normal;
 }
 
 header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
     background: linear-gradient(to right, #72858C, #A68F49);
 }
 
 header img {
     width: 150px;
     height: auto;
+    margin-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav a {
+    margin: 0 5px;
+    position: relative;
+    color: #403514;
     text-decoration: none;
+}
+
+main {
+    padding: 20px;
 }
 
 #frase-de-efeito {
@@ -31,6 +52,31 @@ nav a {
     text-shadow: 5px 5px 5px #72858C;
 }
 
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
 p a {
     text-decoration: none;
+}
+
+#topo {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#topo a {
+    text-decoration: none;
+}
+
+footer {
+    background-color: #A69153;
+    padding: 20px 0px;
+    text-align: center;
 }
