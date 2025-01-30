@@ -1,64 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lobster&display=swap');
 
 * {
-    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
+    background-color: #BABBBF;
+    color: #211d1e;
     font-family: "Cinzel", serif;
     font-weight: 400;
     font-style: normal;
 }
 
 header {
-    background: linear-gradient(to right, #72858C, #A68F49);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    background: linear-gradient(to right, #464C59, #BABBBF);
 }
 
 header img {
     width: 150px;
     height: auto;
+    margin-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav a {
+    margin: 0 5px;
+    position: relative;
+    color: #403514;
     text-decoration: none;
 }
 
+nav a:hover {
+    color: #F2D479;
+}
+
 #frase-de-efeito {
-    color: #A68F49;
+    color: #464C59;
     font-weight: 60;
     font-size: 1.1rem;
     letter-spacing: 2.5px;
     text-shadow: 5px 5px 5px #72858C;
 }
 
-p a {
-    text-decoration: none;
+main {
+    padding: 20px;
 }
 
 .listagem-conteudo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 7px 0px;
+    gap: 0px 0px;
 }
 
 .listagem-conteudo a {
     text-align: center;
     text-decoration: none;
-    background-color: #A69153;
+    color: white;
+    background-color: #464C59;
     padding: 5px 12px;
     border-radius: 10px;
     transition: all 0.5s;
     font-weight: 400;
 }
 
-h2 {
-    color: #261007;
-    padding: 15px 0;
-}
-
 .topicos {
     text-align: justify;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
 }
 
 figure {
@@ -74,4 +104,33 @@ figure img {
 
 figcaption {
     font-size: 0.9rem;
+}
+
+#topo {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#topo a {
+    color: #211d1e;
+    text-decoration: none;
+}
+
+#topo a:hover {
+    color: #5D6673;
+}
+
+footer {
+    background-color: #464C59;
+    color: white;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    figure img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
 }

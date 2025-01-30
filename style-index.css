@@ -1,37 +1,127 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lobster&display=swap');
 
 * {
-    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
+    background-color: #BABBBF;
+    color: #211d1e;
     font-family: "Cinzel", serif;
     font-weight: 400;
-    font-style: normal;
 }
 
 header {
-    background: linear-gradient(to right, #72858C, #A68F49);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    background: linear-gradient(to right, #464C59, #BABBBF);
 }
 
 header img {
     width: 150px;
     height: auto;
+    margin-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav a {
+    margin: 0 5px;
+    position: relative;
+    color: #403514;
     text-decoration: none;
+}
+
+#frase-de-efeito {
+    color: #464C59;
+    font-weight: 60;
+    font-size: 1.1rem;
+    letter-spacing: 2.5px;
+    text-shadow: 5px 5px 5px #72858C;
+}
+
+.main-container {
+    display: flex;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.main-container h2 {
+    color: #BABBBF;
+}
+
+.main-container p {
+    font-weight: 450;
+    color: #0D0D0D;
+    padding: 5px;
+}
+
+.main-block {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 200px; 
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #464C59;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(17, 43, 15, 0.267);
+}
+
+.main-block a {
+    color: #403514;
+    background-color: #BABBBF;
+    max-width: 150px;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.main-block a:hover {
+    color: #0D0D0D;
+    background-color: #F2D479;
+}
+
+main {
+    padding: 20px;
 }
 
 p a {
     text-decoration: none;
 }
 
-#frase-de-efeito {
-    color: #A68F49;
-    font-weight: 60;
-    font-size: 1.1rem;
-    letter-spacing: 2.5px;
-    text-shadow: 5px 5px 5px #72858C;
+#topo {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#topo a {
+    color: #211d1e;
+    text-decoration: none;
+}
+
+#topo a:hover {
+    color: #5D6673;
+}
+
+footer {
+    background-color: #464C59;
+    color: white;
+    padding: 20px 0px;
+    text-align: center;
 }
 

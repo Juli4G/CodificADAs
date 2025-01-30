@@ -7,8 +7,11 @@
 }
 
 body {
+    background-color: #BABBBF;
+    color: #211d1e;
     font-family: "Cinzel", serif;
     font-weight: 400;
+    font-style: normal;
 }
 
 header {
@@ -18,7 +21,7 @@ header {
     align-items: center;
     justify-content: center;
     padding: 20px 0;
-    background: linear-gradient(to right, #72858C, #A68F49);
+    background: linear-gradient(to right, #464C59, #BABBBF);
 }
 
 header img {
@@ -40,17 +43,18 @@ nav a {
     text-decoration: none;
 }
 
-main {
-    padding: 20px;
-}
-
 #frase-de-efeito {
-    color: #A68F49;
+    color: #464C59;
     font-weight: 60;
     font-size: 1.1rem;
     letter-spacing: 2.5px;
     text-shadow: 5px 5px 5px #72858C;
 }
+
+main {
+    padding: 20px;
+}
+
 
 .table-responsive {
     width: 100%;
@@ -62,8 +66,15 @@ table {
     text-align: center;
 }
 
-p a {
-    text-decoration: none;
+th {
+    background-color: #464C59;
+    color: white;
+    padding: 0.6rem;
+}
+
+td {
+    background-color: #989DA6;
+    padding: 0.6rem;
 }
 
 #topo {
@@ -72,11 +83,17 @@ p a {
 }
 
 #topo a {
+    color: #211d1e;
     text-decoration: none;
 }
 
+#topo a:hover {
+    color: #5D6673;
+}
+
 footer {
-    background-color: #A69153;
+    background-color: #464C59;
+    color: white;
     padding: 20px 0px;
     text-align: center;
 }
