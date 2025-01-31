@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #BABBBF;
+    background-color: #F2F2F2;
     color: #211d1e;
     font-family: "Cinzel", serif;
     font-weight: 400;
@@ -30,6 +30,18 @@ header img {
     margin-bottom: 20px;
 }
 
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -39,29 +51,46 @@ nav {
 nav a {
     margin: 0 5px;
     position: relative;
-    color: #403514;
+    background-color: #464C59;
+    color: white;
     text-decoration: none;
+    padding: 5px 12px;
+    border-radius: 10px;
+    transition: all 0.5s;
+    font-weight: 400;
 }
 
 nav a:hover {
-    color: #F2D479;
+    background-color: #F2D479;
+    color: #211d1e;
 }
 
 #frase-de-efeito {
     color: #464C59;
     font-weight: 60;
     font-size: 1.1rem;
-    letter-spacing: 2.5px;
+    letter-spacing: 1px;
     text-shadow: 5px 5px 5px #72858C;
+    text-align: center;
+    padding: 15px;
+}
+
+h1 {
+    padding: 15px;
+}
+
+h2 {
+    padding: 15px;
 }
 
 main {
     padding: 20px;
+    text-align: center;
 }
+
 
 .listagem-conteudo {
     display: flex;
-    flex-direction: column;
     align-items: center;
     gap: 0px 0px;
 }
@@ -127,7 +156,13 @@ footer {
     text-align: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 150px) {
+    header img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 570px) {
     figure img {
         max-width: 100%;
         height: auto;

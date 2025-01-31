@@ -7,10 +7,11 @@
 }
 
 body {
-    background-color: #BABBBF;
+    background-color: #F2F2F2;
     color: #211d1e;
     font-family: "Cinzel", serif;
     font-weight: 400;
+    font-style: normal;
 }
 
 header {
@@ -38,17 +39,30 @@ nav {
 nav a {
     margin: 0 5px;
     position: relative;
-    color: #403514;
+    background-color: #464C59;
+    color: white;
     text-decoration: none;
+    padding: 5px 12px;
+    border-radius: 10px;
+    transition: all 0.5s;
+    font-weight: 400;
+}
+
+nav a:hover {
+    background-color: #F2D479;
+    color: #211d1e;
 }
 
 #frase-de-efeito {
     color: #464C59;
     font-weight: 60;
-    font-size: 1.1rem;
-    letter-spacing: 2.5px;
+    letter-spacing: 1px;
     text-shadow: 5px 5px 5px #72858C;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 15px;
 }
+
 
 .main-container {
     display: flex;
@@ -59,12 +73,12 @@ nav a {
 }
 
 .main-container h2 {
-    color: #BABBBF;
+    color: #464C59;
 }
 
 .main-container p {
     font-weight: 450;
-    color: #0D0D0D;
+    color: white;
     padding: 5px;
 }
 
@@ -74,21 +88,22 @@ nav a {
     flex: 1 1 200px; 
     align-items: center;
     justify-content: space-evenly;
-    background-color: #464C59;
+    background-color: #BABBBF;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 7px;
     box-shadow: 0 4px 6px rgba(17, 43, 15, 0.267);
 }
 
 .main-block a {
-    color: #403514;
-    background-color: #BABBBF;
+    color: #BABBBF;
+    background-color: #464C59;
     max-width: 150px;
     padding: 5px 12px;
     border-radius: 15px;
     font-weight: 500;
     text-decoration: none;
     transition: all 0.5s;
+    text-align: center;
 }
 
 .main-block a:hover {
@@ -98,6 +113,18 @@ nav a {
 
 main {
     padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
 }
 
 p a {
@@ -123,5 +150,11 @@ footer {
     color: white;
     padding: 20px 0px;
     text-align: center;
+}
+
+@media (max-width: 150px) {
+    header img {
+        width: 100%;
+    }
 }
 
